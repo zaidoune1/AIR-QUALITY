@@ -1,0 +1,5 @@
+# Ignore les fichiers de configuration locale
+.env
+
+# Ignore les fichiers d'installation de dépendances
+/node_modules/
