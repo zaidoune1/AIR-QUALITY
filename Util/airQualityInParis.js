@@ -1,4 +1,4 @@
-const airQualityModel = require("../../models/airQualityModel");
+const airQualityModel = require("../models/airQualityModel");
 const axiosGetResponse = require("./getAxiosData");
 
 const verifiedAirInParis = async () => {

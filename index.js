@@ -3,7 +3,7 @@ require("dotenv").config();
 const cron = require("node-cron");
 const router = require("./routes/airQualityRoute");
 const connectDb = require("./config/dbConfig");
-const verifiedAirInParis = require("./config/Util/airQualityInParis");
+const verifiedAirInParis = require("./Util/airQualityInParis");
 
 const app = express();
 

@@ -1,4 +1,4 @@
-const axiosGetResponse = require("../config/Util/getAxiosData");
+const axiosGetResponse = require("../Util/getAxiosData");
 const airQualityModel = require("../models/airQualityModel");
 
 const getCoordinates = async (req, res) => {
