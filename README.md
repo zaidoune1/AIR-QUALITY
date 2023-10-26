@@ -46,5 +46,23 @@ Pour exécuter le projet localement, suivez ces étapes :
 3) Créez un fichier .env à la racine du projet pour stocker votre clé API IQAir.
 4) Exécutez l'application en utilisant npm start.
 
+## Utilisation avec Docker
+
+Pour exécuter cette application en utilisant Docker, suivez ces étapes :
+
+1. Assurez-vous d'avoir Docker installé sur votre système.
+
+2. Ouvrez un terminal et placez-vous dans le répertoire du projet.
+
+3. Exécutez la commande suivante pour construire l'image Docker en utilisant le Dockerfile fourni :
+4. 
+make build
+Une fois l'image Docker est construite, vous pouvez exécuter un conteneur à partir de cette image avec la commande :
+
+docker run -p 3000:3000 air-quality
+Cela exposera l'application sur le port 3000 de votre machine.
+
+Accédez à l'application en ouvrant un navigateur Web et en visitant l'URL http://localhost:3000.
+
 
 
