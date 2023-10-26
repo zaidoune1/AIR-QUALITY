@@ -14,6 +14,9 @@ connectDb();
 const PORT = process.env.PORT_URI || 5000;
 
 app.use("/api/air-quality/", router);
+app.all("*", (req, res) => {
+  return res.status("404").json({ message: "page not found" });
+});
 
 cron.schedule("*/1 * * * *", () => {
   try {
